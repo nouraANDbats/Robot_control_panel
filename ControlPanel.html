@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+</head>
+<body>
+    <style>
+
+.button-1 {
+background-color: rgb(72, 80, 242);    
+border: none;
+color: white;
+border-radius: 15%;
+padding: 15px 32px;
+margin-top: 40px ;
+margin-bottom: 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px
+
+}
+.button-1:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-1:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-1px);
+}
+
+.button-1:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(1px);
+}
+
+.Forawardbutton{
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+
+.Leftbutton{ 
+  display: block;
+  text-align: left;
+  position: fixed;
+  top: 200px;
+  left: 250px;
+}
+
+.Rightbutton{ 
+  display: block;
+  text-align: center;
+  position: fixed;
+  top: 200px;
+  right: 250px;
+}
+.Backwardbutton{ 
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 80px;
+ 
+}
+.Stopbutton{
+  display: block;
+  text-align: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 100px;
+}
+</style>
+
+    <form action ="processInput.php" method="post">
+
+  <div class="Forawardbutton" >
+  <input class="button-1" type="submit" name="for" value="Forward"/>
+</div>
+<div class="Stopbutton">
+    <button  class="button-1" type="submit" value="Stop" name="stop">Stop</button>
+</div>
+<div class="Rightbutton">
+    <button  name="right" class="button-1" type="submit" name="right" value="Right">Right</button>
+</div>
+<div class="Leftbutton">
+    <button  class="button-1" type="submit" name="left" value="Left">Left</button>
+    </div>
+    <div class="Backwardbutton">
+    <button class="button-1" type="submit" name="back" value="Backward">Backward</button>
+    </div>
+    
+</form>
+
+</body>
+</html>
